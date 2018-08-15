@@ -7,8 +7,8 @@ URL = "https://api.fda.gov/drug/label.json?api_key=WLm7AKMaBm8CYrA1pKJrcbmw8z36k
 data = requests.get(URL).json()
 
 for result in data.get('results', []):
-
-        if subsection in result['openfda']:
-            print(result["openfda"][subsection])
+    
+    if subsection in result['openfda']:
+        print(result["openfda"][subsection])
 
     print("\n\n")
